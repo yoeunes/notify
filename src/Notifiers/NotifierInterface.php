@@ -14,7 +14,7 @@ interface NotifierInterface
     public function render(array $notifications): string;
 
     /**
-     * Get Allowed Types
+     * Get Allowed Types.
      *
      * @return array
      */

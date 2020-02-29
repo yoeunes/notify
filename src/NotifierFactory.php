@@ -16,13 +16,13 @@ class NotifierFactory
     {
         $driver = $config['default'];
 
-        if (!isset($config[$driver])) {
+        if (! isset($config[$driver])) {
             throw new RuntimeException('Unknown "'.$driver.'" notification driver.');
         }
 
         $class = $config[$driver]['class'];
 
-        if (!class_exists($class)) {
+        if (! class_exists($class)) {
             throw new RuntimeException('class "'.$class.'" does not exists.');
         }
 

@@ -2,8 +2,8 @@
 
 namespace Yoeunes\Notify\Tests;
 
-use Yoeunes\Notify\NotifyServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
+use Yoeunes\Notify\NotifyServiceProvider;
 
 class TestCase extends BaseTestCase
 {

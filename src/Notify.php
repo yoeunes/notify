@@ -66,7 +66,7 @@ class Notify
      */
     public function addNotification(string $type, string $message, string $title = '', array $options = []): self
     {
-        if (!in_array($type, $this->notifier->getAllowedTypes(), true)) {
+        if (! in_array($type, $this->notifier->getAllowedTypes(), true)) {
             throw new RuntimeException('Invalid type "'.$type.'" for the "'.$this->notifier->getName().'"');
         }
 
@@ -128,7 +128,7 @@ class Notify
      */
     public function __call($method, $arguments)
     {
-        if (!in_array($method, $this->notifier->getAllowedTypes(), true)) {
+        if (! in_array($method, $this->notifier->getAllowedTypes(), true)) {
             throw new RuntimeException('Invalid type "'.$method.'" for the "'.$this->notifier->getName().'"');
         }
 

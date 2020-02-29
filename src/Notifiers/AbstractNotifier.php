@@ -81,7 +81,7 @@ abstract class AbstractNotifier
     abstract public function notify(string $type, string $message = '', string $title = '', string $options = ''): string;
 
     /**
-     * Get Allowed Types
+     * Get Allowed Types.
      *
      * @return array
      */
